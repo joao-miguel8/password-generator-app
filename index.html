@@ -10,43 +10,45 @@
         <title>password generator</title>
     </head>
     <body>
-        <header>
-            <h1>Password Generator</h1>
-        </header>
         <main>
-            <form action="">
-                <div class="checklist-container">
-                    <div class="checklist">
-                        <input type="checkbox" />
-                        <span>Numbers</span>
-                    </div>
-                    <div class="checklist">
-                        <input type="checkbox" />
-                        <span>LowerCase</span>
-                    </div>
-                    <div class="checklist">
-                        <input type="checkbox" />
-                        <span>UpperCase</span>
-                    </div>
-                    <div class="checklist">
-                        <input type="checkbox" />
-                        <span>Symbols (e.g.,$%^& > < / '"@) </span>
-                    </div>
-                    <div class="checklist">
-                        <input type="checkbox" />
-                        <span>Spaces</span>
-                    </div>
-                    <div class="password-container">
-                        <span class="password-length">Password Length</span>
-                        <span>8</span>
-                    </div>
+            <div class="password-generator-wrapper">
+                <h1>Password Generator</h1>
+                <section class="checklist-container">
+                    <form action="">
+                        <div class="checklist">
+                            <input type="checkbox" />
+                            <span>Numbers</span>
+                        </div>
+                        <div class="checklist">
+                            <input type="checkbox" />
+                            <span>LowerCase</span>
+                        </div>
+                        <div class="checklist">
+                            <input type="checkbox" />
+                            <span>UpperCase</span>
+                        </div>
+                        <div class="checklist">
+                            <input type="checkbox" />
+                            <span>Symbols (e.g.,$%^& > < / '"@) </span>
+                        </div>
+                        <div class="checklist">
+                            <input type="checkbox" />
+                            <span>Spaces</span>
+                        </div>
+                        <div class="password-length-container">
+                            <span class="password-length">Password Length</span>
+                            <div class="password-count-container">
+                                <span>8</span>
+                            </div>
+                        </div>
+                        <button class="generate-password">Generate</button>
+                    </form>
+                </section>
+                <div class="password-generated-container">
+                    <span>password</span>
+                    <span class="password">0?>2F3ULQ!</span>
+                    <span>copy</span>
                 </div>
-                <button class="generate-password">Generate</button>
-            </form>
-            <div class="password-generated-container">
-                <span>password</span>
-                <span class="password">0?>2F3ULQ!</span>
-                <span>copy</span>
             </div>
         </main>
     </body>

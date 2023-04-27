@@ -1,0 +1,105 @@
+:root {
+    /* primary: */
+    --primary01: #307fed;
+    /* neutral: */
+    --neutral01: #ffffff;
+    --neutral02: #f0f4f7;
+    --neutral03: #797979;
+    --neutral04: #000000;
+}
+
+body {
+    background: var(--neutral02);
+}
+
+form {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 0 0 20px 0;
+}
+
+/* Shared Styles: */
+.checklist,
+/* .password-length-container, */
+.password-generator-wrapper {
+    padding: 14px 0;
+}
+
+.password-length,
+.password-count-container {
+    padding: 14px 0;
+}
+
+/* --------------- */
+
+.password-generator-wrapper {
+    margin: 30px 30px;
+}
+
+.checklist-container {
+    /* border: 1px solid orange;
+    display: flex;
+    flex-direction: column;
+    gap: 5px; */
+}
+
+.checklist {
+    /* border: 1px solid green; */
+    background: var(--neutral01);
+    border-radius: 5px;
+}
+
+.password-length-container {
+    /* border: 1px solid blue; */
+    display: flex;
+    gap: 5px;
+}
+
+.password-length {
+    /* border: 1px solid red; */
+    background: var(--neutral01);
+    flex: 1;
+}
+
+.password-count-container {
+    border: 1.9px solid var(--neutral01);
+    flex: 1;
+    text-align: center;
+}
+
+.generate-password {
+    background: var(--primary01);
+    padding: 12px 28px;
+    align-self: center;
+    border-radius: 2px;
+    color: var(--neutral01);
+    font-weight: bold;
+    margin: 14px 0;
+}
+
+.password-generated-container {
+    /* border: 3px solid purple; */
+    display: flex;
+    justify-content: space-between;
+    min-height: 50px;
+    background: var(--neutral01);
+    padding: 10px;
+}
+
+.password-generated-container .password {
+    align-self: center;
+    font-size: 2rem;
+}
+
+.password-generated-container span:nth-of-type(odd) {
+    color: var(--neutral03);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
